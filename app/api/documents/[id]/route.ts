@@ -1,0 +1,3 @@
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { getLawyerSession } from "../../../lawyer-auth";
+export async function GET(_request:Request,{params}:{params:Promise<{id:string}>}){const session=await getLawyerSession();if(!session)return Response.json({error:"No autorizado"},{status:401});const {id}=await params,supabase=await createSupabaseServerClient();const {data}=await supabase.from("legal_documents").select("file_path").eq("id",id).maybeSingle();if(!data)return new Response(null,{status:404});const {data:signed,error}=await supabase.storage.from("legal-documents").createSignedUrl(data.file_path,60,{download:true});if(error||!signed)return new Response(null,{status:404});return Response.redirect(signed.signedUrl,302)}
