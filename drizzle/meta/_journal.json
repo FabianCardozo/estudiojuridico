@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1789504290658,
+      "tag": "0000_redundant_jack_murdock",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1789699787048,
+      "tag": "0001_natural_jack_power",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1789732615109,
+      "tag": "0002_fast_exiles",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1790367111718,
+      "tag": "0003_clammy_fallen_one",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1790508383201,
+      "tag": "0004_sudden_agent_zero",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1790681742499,
+      "tag": "0005_flimsy_mandarin",
+      "breakpoints": true
+    }
+  ]
+}
